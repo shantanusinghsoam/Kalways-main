@@ -5,12 +5,13 @@ import styled from 'styled-components';
 export const SticNav = styled.nav`
   background: #313131;
   width: 99%;
-  display: block;
+  display: flex;
   position: fixed;
   height: 40px;
-  display: flex;
+
   padding: 0px 50px 0px 0px;
-  justify-content: flex-end;
+  justify-content: space-between;
+
   // padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 20;
   @media screen and (max-width: 768px) {
@@ -19,7 +20,15 @@ export const SticNav = styled.nav`
   /* Third Nav */
   /* justify-content: flex-start; */
 `;
-
+export const Numbers = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 3rem;
+  text-align: center;
+  color: #00e700;
+`;
 export const NavLink = styled.div`
   color: #fff;
   display: flex;

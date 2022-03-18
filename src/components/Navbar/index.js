@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
-import logo from '../../images/logo.png';
-import logo1 from '../../images/vanguard.png';
+import logo from '../../images/LogowithTitle.png';
+
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll, Link } from 'react-scroll';
 
@@ -14,7 +14,7 @@ import {
   NavItem,
   Numbers,
   NavLinks,
-} from './NavbarElements';   
+} from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
   return (
@@ -25,10 +25,7 @@ const Navbar = ({ toggle }) => {
             to="/"
             className="flex flex-col content-center aligns-center"
           >
-            <img src={logo} width="150px" alt="logo" />
-            <Numbers className="text-sm items-center pt-2">
-              1-800-502-7000
-            </Numbers>
+            <img src={logo} width="180px" alt="logo" />
           </NavLogo>
 
           {/* <Bars onClick={toggle}/> */}
@@ -37,13 +34,12 @@ const Navbar = ({ toggle }) => {
               <NavLinks to="/" onClick={toggleHome}>
                 <a to="/">Home</a>
               </NavLinks>
-            </NavItem> */}      
+            </NavItem> */}
 
             <NavItem>
               <NavLinks to="/" activeStyle>
                 <a href="/">HOME</a>
               </NavLinks>
-         
             </NavItem>
 
             <NavItem>
@@ -103,11 +99,9 @@ const Navbar = ({ toggle }) => {
           <FaBars/>
         </MobileIcon> */}
         </Nav>
-      </IconContext.Provider>   
+      </IconContext.Provider>
     </>
   );
 };
 
-export default Navbar;    
-
-
+export default Navbar;

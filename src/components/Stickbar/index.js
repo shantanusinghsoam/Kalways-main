@@ -1,10 +1,20 @@
 import React from 'react';
-import { SticNav, NavLink, Bars, NavMenu } from './StickbarElements';
-
+import { SticNav, NavLink, Bars, NavMenu, Numbers } from './StickbarElements';
+import { AiTwotonePhone } from 'react-icons/ai';
 const Stickbar = () => {
   return (
     <>
       <SticNav>
+        <Numbers>
+          <AiTwotonePhone style={{ color: '#00e700', paddingTop: '2px' }} />
+          <div
+            style={{ color: '#00e700', paddingTop: '2px' }}
+            className="text-sm items-center pt-2"
+          >
+            1-800-502-7000
+          </div>
+        </Numbers>
+
         <NavMenu>
           {/* <NavLink to="/" activeStyle></NavLink> */}
 

@@ -30,11 +30,13 @@ z-index: 1;
 export const ContainerMain = Styled.div`
 display: flex;
 flex-direction: column;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 h1{
     font-size: 1.5rem;
     font-weight: normal;
     color: #fff;
     letter-spacing: 0.3rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 `;
 export const HeroBg = Styled.div`

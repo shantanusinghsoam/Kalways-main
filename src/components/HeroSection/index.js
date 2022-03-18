@@ -44,7 +44,8 @@ import styled from 'styled-components';
 const Gradients = styled.div`
   background-image: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.6) 20%,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.1) 60%,
     rgba(0, 0, 0, 0) 100%
   );
   width: 100%;
@@ -290,7 +291,7 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent>
         <ContainerMain>
-          <h1 className="text-white">KALWAY</h1>
+          <h1 className="text-white drop-shadow-md">KALWAY</h1>
           <HeroP>Drive your business forward</HeroP>
           <a href="/Contact">
             <button class="btn">
